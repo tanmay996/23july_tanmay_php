@@ -12,7 +12,7 @@ int main()
 	count=a%10;
 	a/=10;
 	}
-	printf("%d",a+temp);
+	printf("Addition of first and last valuer%d",a+temp);
 	
 	
  }

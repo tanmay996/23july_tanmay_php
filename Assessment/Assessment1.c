@@ -1,5 +1,6 @@
 #include<stdio.h>
-int a,b,i;
+float a,b;
+int i;                                              //declared global varible
 int menu()                                         //created menu function
     {
         printf("----------MENU----------\n");           
@@ -13,38 +14,39 @@ int menu()                                         //created menu function
       int addition()
             {
                 a+=b;                               //using assignment operator;
-                printf("Addition is %d \n",a);
+                printf("Addition is %f \n",a);
                 return a;
             }
 
         int substraction()
             {
                 a-=b;
-                printf("Subtraction is %d \n",a);
+                printf("Subtraction is %f \n",a);
                 return a;
             }
         int multiplication()
             {
                 a*=b;
-                printf("Multiplication is %d \n",a);
+                printf("Multiplication is %f \n",a);
                 return a;
             }
         int division()
             {      
                 a/=b;
-                printf("Divion is %d \n",a);
+                printf("Divion is %f \n",a);
                 return a;
             }
-    int data()
-    {
-        
+    int data()                          
+    {  
         printf("Enter your choice :");
-        scanf("%d",&i);
+        scanf("%d",&i);       
+        if(i==5)                                  //condition for  exit calculator
+        return 0;
+        else{   
         printf("Enter first value :");
-        scanf("%d",&a);
+        scanf("%f",&a);
         printf("Enter second value :");
-        scanf("%d",&b);        
-        
+        scanf("%f",&b); 
         
         switch(i)
         {
@@ -70,10 +72,11 @@ int menu()                                         //created menu function
             }
             case 5:
             {
-                return 0;
+                break;
             }
             default:
             printf("Invalid choice :");
+        }
         }
     }
 

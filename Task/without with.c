@@ -9,6 +9,6 @@ void getdata(int a)
 int main()
 {
 	
-	getdata(2);
+	getdata(a);
 	
 }

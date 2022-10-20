@@ -1,16 +1,24 @@
 #include<iostream>
-int no;
 using namespace std;
-inline int getvalue()
+int no;
+class data
 {
-    
-    cout<<"Enter no.";
-    cin>>no;
-    return no;
-}
+ 
+
+    public :
+    int no;
+    int getvalue()
+    {
+     cout<<"Enter no.";
+     cin>>no;
+     return no;
+    }
+};
+
 int main()
 {
-    getvalue();
-    cout<<"Square is "<<no*no<<endl;
-    cout<<"Cubic is "<<no*no*no;
+    data obj;
+    obj.getvalue();
+    cout<<"Square is "<<obj.no*obj.no<<endl;
+    cout<<"Cubic is "<<obj.no*obj.no*obj.no;
 }

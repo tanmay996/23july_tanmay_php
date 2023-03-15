@@ -14,10 +14,10 @@ int values(swape frnd)
     
     if(frnd.a > frnd.b)
     {
-        cout<<"Value of a: "<<frnd.a<<"is max."<<endl;
+        cout<<"Value of a: "<<frnd.a<<" is max."<<endl;
     }
     else{
-        cout<<"Enter value of b:"<<frnd.b<<"is max."<<endl;
+        cout<<"Value of b:"<<frnd.b<<" is max."<<endl;
     }
     
     return 0;

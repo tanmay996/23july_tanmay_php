@@ -26,7 +26,7 @@ class batsman : public cricketer         //derived class
       avgrun=total/3;                 //average runs
       
       bestp = 5;
-      for(i= 0 ; i < 3 ; i++)
+      for(i= 0 ; i < 3 ; i++)          // calculation of best performance
         {
           if(truns[i] >= truns[1])
           {

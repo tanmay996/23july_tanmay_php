@@ -4,8 +4,8 @@ template <typename t>
 class swapping
 {
     public :
-    
-    t data(t a , t b)
+    t a , b;
+    t data()
     {
         cout<<"Enter value of A :"<<endl;
         cin>>a;
@@ -26,7 +26,7 @@ int main()
         int a,b;
         
         swapping <int>t1;
-        t1.data(a , b);
+        t1.data();
         
         return 0;
 }

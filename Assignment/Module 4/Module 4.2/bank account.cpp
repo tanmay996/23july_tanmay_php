@@ -3,7 +3,7 @@ using namespace std;
 class bank
 {
     public:
-    string nme,acctyp[50];;
+    string nme,acctyp;
     int accno,accbalance,dpst,wdramt;
     
     int assigndetail()
@@ -11,6 +11,8 @@ class bank
         cout<<"*-----Piggy Bank-----*\n";
         cout<<"Enter your Accout Name - ";
         cin>>nme;
+        cout<<"Enter account type - ";
+        cin>>acctyp;
         cout<<"Enter your Acount Numer - ";
         cin>>accno;
 
